@@ -12,12 +12,12 @@ public class BitMasking {
         System.out.println(togglingBit(n,k));
         System.out.println(checkBit(n,k));
     }
-    // for setBit , TC=O(1) and SC=O(1)
+    // for setBit , TC=O(1) and SC=O(1) for setting single bit
     static int setBit(int n, int k){
         System.out.print("After Setting " + k+"th bit, the answer will be: ");
         return n= n | (1<<k);
     }
-    // for unSetBit , TC=O(1) and SC=O(1)
+    // for unSetBit , TC=O(1) and SC=O(1) for unsetting single bit
     static int unSetBit(int n, int k){
         System.out.print("After unsetting " + k+"th bit, the answer will be: ");
         return n= n & ~(1<<k);
@@ -27,7 +27,7 @@ public class BitMasking {
         System.out.print("After toggling " + k+"th bit, the answer will be: ");
         return n= n ^ (1<<k);
     }
-    // for checkBit , TC=O(1) and SC=O(1)
+    // for checkBit , TC=O(1) and SC=O(1) for checking single bit
     static boolean checkBit(int n, int k){
         System.out.print("Checking " + k+"th bit, the answer is: ");
         if((n & (1<<k))==0) return false;
